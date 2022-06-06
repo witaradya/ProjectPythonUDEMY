@@ -79,5 +79,8 @@ people = input("How many people to split the bill? ")
 pay = float(totalBill) * (float(percenTip) / 100)
 pay = (pay + float(totalBill)) / float(people)
 
-print(f"Each person should pay: ${round(pay,2)}")
+# print(f"Each person should pay: ${round(pay,2)}")
+
+pay2 = "{:.2f}".format(pay)
+print(f"Each person should pay2: ${pay2}")
 # ====================================================================
